@@ -1,0 +1,42 @@
+:root {
+  /* Cores primárias */
+  --cor-primaria: #0B3B60;
+  --cor-primaria-escura: #072A45;
+  --cor-primaria-clara: #145A8A;
+
+  /* Cores secundárias */
+  --cor-secundaria: #F5F9FF;
+  --cor-secundaria-escura: #E2ECF9;
+
+  /* Destaque */
+  --cor-destaque: #E07A2C;
+  --cor-destaque-claro: #F59A5A;
+  --cor-destaque-escuro: #C55A15;
+
+  /* Neutras */
+  --cor-branco: #FFFFFF;
+  --cor-preto: #1E2A3A;
+  --cor-cinza: #5A6B7A;
+  --cor-cinza-claro: #94A3B8;
+  --cor-cinza-fundo: #F8FAFC;
+
+  /* Tipografia */
+  --fonte-titulo: 'Poppins', sans-serif;
+  --fonte-corpo: 'Inter', sans-serif;
+
+  /* Espaçamento */
+  --container: 1280px;
+  --padding-mobile: 1rem;
+  --padding-desktop: 2rem;
+
+  /* Bordas */
+  --border-radius: 16px;
+  --border-radius-pequeno: 8px;
+
+  /* Sombras */
+  --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.04);
+  --sombra-media: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+  /* Transições */
+  --transicao: all 0.3s ease;
+}

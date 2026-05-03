@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato | Cartório 3º Ofício de Picos-PI</title>
+    <meta
+      name="description"
+      content="Fale com o Cartório 3º Ofício de Picos: endereço na Rua Santo Antônio, telefone, WhatsApp, mapa e formulário de solicitação de certidão."
+    />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="icon" type="image/png" href="../assets/images/logo-3oficio.png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="../index.html">
+          <img
+            class="logo__img"
+            src="../assets/images/logo-3oficio.png"
+            alt="Logo Cartório 3º Ofício de Picos"
+            width="52"
+            height="52"
+          />
+          <span class="logo__text">
+            <span class="logo__title">Cartório 3º Ofício</span>
+            <span class="logo__subtitle">Picos-PI</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Abrir menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-menu" id="menu-principal" aria-label="Principal">
+          <a href="../index.html">Início</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="solicitacao.html">Solicitar certidão</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contato.html" aria-current="page">Contato</a>
+          <button type="button" class="btn btn--whatsapp-inline btn--small" onclick="abrirWhatsApp()">
+            WhatsApp
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section class="page-hero">
+        <div class="container">
+          <div class="badge-row">
+            <span class="badge badge--soft">Atendimento rápido</span>
+          </div>
+          <h1 class="page-hero__title">Contato</h1>
+          <p class="page-hero__lead">
+            Estamos no centro de Picos. Tire dúvidas por telefone, e-mail ou WhatsApp antes da sua visita.
+          </p>
+          <button type="button" class="btn btn--primary mt-1" onclick="abrirWhatsApp()">
+            Chamar no WhatsApp
+          </button>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tit-info">
+        <div class="container contact-grid">
+          <div>
+            <h2 id="tit-info" class="section__title">Informações de contato</h2>
+            <p class="section__lead">Dados oficiais do Cartório 3º Ofício de Picos.</p>
+            <div class="contact-highlight">
+              <ul class="contact-list">
+                <li>
+                  <strong>Endereço</strong>
+                  Rua Santo Antônio, 218 — Centro<br />
+                  Picos-PI, CEP 64600-000
+                </li>
+                <li>
+                  <strong>Telefone</strong>
+                  <a href="tel:+558934222905">(89) 3422-2905</a>
+                </li>
+                <li>
+                  <strong>WhatsApp</strong>
+                  <a href="#" onclick="event.preventDefault(); abrirWhatsApp();">(89) 99999-9999</a>
+                </li>
+                <li>
+                  <strong>E-mail</strong>
+                  <a href="mailto:cartoriooficio3@hotmail.com">cartoriooficio3@hotmail.com</a>
+                </li>
+                <li>
+                  <strong>Horário</strong>
+                  Segunda a sexta, 7h às 17h
+                </li>
+              </ul>
+              <button type="button" class="btn btn--primary btn--full mt-1" onclick="abrirWhatsApp()">
+                Falar no WhatsApp
+              </button>
+            </div>
+          </div>
+          <div>
+            <h2 class="section__title">Mapa</h2>
+            <p class="section__lead">Localização aproximada no centro de Picos (ajuste o pin ao publicar).</p>
+            <div class="map-embed">
+              <iframe
+                title="Mapa — Cartório 3º Ofício Picos"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=-7.0772,-41.4670&hl=pt-BR&z=16&ie=UTF8&iwloc=&output=embed"
+              ></iframe>
+            </div>
+            <a
+              class="btn btn--outline-dark btn--full mt-1"
+              href="https://www.google.com/maps/search/?api=1&query=-7.0772,-41.4670"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Abrir no Google Maps</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" aria-labelledby="tit-form">
+        <div class="container">
+          <h2 id="tit-form" class="section__title">Solicitação de certidão (demonstração)</h2>
+          <p class="section__lead">
+            Preencha os dados abaixo. O envio por este formulário ainda não está ativo — use para testar o layout.
+          </p>
+          <div class="form-card">
+            <form data-placeholder-form novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="nome">Nome completo *</label>
+                  <input id="nome" name="nome" type="text" required autocomplete="name" />
+                </div>
+                <div class="form-field">
+                  <label for="cpf">CPF *</label>
+                  <input id="cpf" name="cpf" type="text" required inputmode="numeric" autocomplete="off" />
+                </div>
+                <div class="form-field">
+                  <label for="tipo">Tipo de certidão *</label>
+                  <select id="tipo" name="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="nascimento">Nascimento</option>
+                    <option value="casamento">Casamento</option>
+                    <option value="obito">Óbito</option>
+                    <option value="protesto">Protesto</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="telefone">Telefone *</label>
+                  <input id="telefone" name="telefone" type="tel" required autocomplete="tel" />
+                </div>
+                <div class="form-field">
+                  <label for="email">E-mail</label>
+                  <input id="email" name="email" type="email" autocomplete="email" />
+                </div>
+                <div class="form-field">
+                  <label for="obs">Descrição / observação</label>
+                  <textarea id="obs" name="obs" placeholder="Detalhe nomes, datas ou números de registro, se souber."></textarea>
+                </div>
+              </div>
+              <p class="form-hint form-hint--submit" hidden></p>
+              <div class="form-actions">
+                <button type="submit" class="btn btn--primary">Enviar Solicitação</button>
+                <button type="button" class="btn btn--outline-dark" onclick="abrirWhatsApp()">
+                  Preferir WhatsApp
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tit-faq-rapido">
+        <div class="container">
+          <h2 id="tit-faq-rapido" class="section__title">FAQ rápido</h2>
+          <div class="faq-list">
+            <details>
+              <summary>Quais documentos preciso levar?</summary>
+              <p>
+                Depende do serviço. Em geral, documento com foto, certidões relacionadas e originais ou cópias
+                autenticadas quando exigidas. Confirme pelo telefone ou WhatsApp.
+              </p>
+            </details>
+            <details>
+              <summary>Quanto tempo sai uma certidão?</summary>
+              <p>
+                Prazos variam conforme tipo de certidão e conferências. Solicite estimativa no atendimento.
+              </p>
+            </details>
+            <details>
+              <summary>Precisa agendar?</summary>
+              <p>
+                Para alguns serviços pode ser necessário agendar ou comparecer em horário específico. Pergunte antes
+                de ir.
+              </p>
+            </details>
+          </div>
+          <p class="mt-1-5">
+            <a href="faq.html">Ver todas as perguntas frequentes →</a>
+          </p>
+          <button type="button" class="btn btn--primary mt-1" onclick="abrirWhatsApp()">
+            Dúvidas? WhatsApp
+          </button>
+        </div>
+      </section>
+
+      <section class="section section--muted" aria-labelledby="tit-redes">
+        <div class="container">
+          <h2 id="tit-redes" class="section__title">Redes sociais</h2>
+          <p class="section__lead">
+            Perfil oficial no Instagram com fotos da unidade, comunicados e orientações ao público de Picos e região.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/cartorio3oficiopicos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-links__main"
+            >
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <path d="M17.5 6.5h.01" />
+              </svg>
+              <span><strong>@cartorio3oficiopicos</strong> — Instagram oficial</span>
+            </a>
+          </div>
+          <p class="mt-1 form-hint">
+            O Instagram não permite exibir aqui a galeria completa sem integração própria; abra o perfil para ver todas
+            as publicações, stories em destaque e dados de contato atualizados pelo cartório.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="logo" href="../index.html">
+            <img
+              class="logo__img"
+              src="../assets/images/logo-3oficio.png"
+              alt=""
+              width="52"
+              height="52"
+              decoding="async"
+            />
+            <span class="logo__text">
+              <span class="logo__title">Cartório 3º Ofício</span>
+              <span class="logo__subtitle">Picos-PI</span>
+            </span>
+          </a>
+          <p class="site-footer__meta">
+            Serviços notariais e de registro com foco na comunidade de Picos e região.
+          </p>
+          <div class="a11y-note">
+            <span>Acessibilidade:</span>
+            <span>VLibras disponível nesta página.</span>
+          </div>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Endereço</h2>
+          <ul class="site-footer__list">
+            <li>Rua Santo Antônio, 218 — Centro</li>
+            <li>Picos-PI, CEP 64600-000</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Contato</h2>
+          <ul class="site-footer__list">
+            <li><a href="tel:+558934222905">(89) 3422-2905</a></li>
+            <li>
+              <a href="mailto:cartoriooficio3@hotmail.com">cartoriooficio3@hotmail.com</a>
+            </li>
+            <li>Seg a sex, 7h às 17h</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Links</h2>
+          <ul class="site-footer__list">
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="solicitacao.html">Solicitar certidão</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li>
+              <a href="https://www.instagram.com/cartorio3oficiopicos/" target="_blank" rel="noopener noreferrer"
+                >Instagram @cartorio3oficiopicos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>© Cartório 3º Ofício de Picos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/whatsapp.js"></script>
+  </body>
+</html>

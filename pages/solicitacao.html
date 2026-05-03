@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solicitar Certidão | Cartório 3º Ofício de Picos-PI</title>
+    <meta
+      name="description"
+      content="Solicite certidões de nascimento, casamento, óbito e demais serviços no Cartório 3º Ofício de Picos. Formulário em demonstração."
+    />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="icon" type="image/png" href="../assets/images/logo-3oficio.png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="../index.html">
+          <img
+            class="logo__img"
+            src="../assets/images/logo-3oficio.png"
+            alt="Logo Cartório 3º Ofício de Picos"
+            width="52"
+            height="52"
+          />
+          <span class="logo__text">
+            <span class="logo__title">Cartório 3º Ofício</span>
+            <span class="logo__subtitle">Picos-PI</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Abrir menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-menu" id="menu-principal" aria-label="Principal">
+          <a href="../index.html">Início</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="solicitacao.html" aria-current="page">Solicitar certidão</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contato.html">Contato</a>
+          <button type="button" class="btn btn--whatsapp-inline btn--small" onclick="abrirWhatsApp()">
+            WhatsApp
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section class="page-hero">
+        <div class="container">
+          <div class="badge-row">
+            <span class="badge badge--soft">Atendimento rápido</span>
+          </div>
+          <h1 class="page-hero__title">Solicitar certidão</h1>
+          <p class="page-hero__lead">
+            Envie sua solicitação (demonstração) ou fale direto pelo WhatsApp para agilizar o atendimento.
+          </p>
+          <button type="button" class="btn btn--primary mt-1" onclick="abrirWhatsApp('Olá! Gostaria de solicitar uma certidão.')">
+            Abrir WhatsApp
+          </button>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tit-solicitacao">
+        <div class="container">
+          <h2 id="tit-solicitacao" class="section__title">Formulário de solicitação</h2>
+          <p class="section__lead">
+            Este formulário é uma prévia do site. O envio online ainda não está conectado ao cartório — use o WhatsApp
+            ou presencialmente para concluir seu pedido.
+          </p>
+          <div class="form-card">
+            <form data-placeholder-form novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="sol-nome">Nome completo *</label>
+                  <input id="sol-nome" name="nome" type="text" required autocomplete="name" />
+                </div>
+                <div class="form-field">
+                  <label for="sol-cpf">CPF *</label>
+                  <input id="sol-cpf" name="cpf" type="text" required inputmode="numeric" />
+                </div>
+                <div class="form-field">
+                  <label for="sol-tipo">Tipo de certidão *</label>
+                  <select id="sol-tipo" name="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="nascimento">Nascimento — 1ª via</option>
+                    <option value="nascimento-2">Nascimento — 2ª via</option>
+                    <option value="casamento">Casamento</option>
+                    <option value="obito">Óbito</option>
+                    <option value="protesto">Certidão de protesto</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="sol-tel">Telefone *</label>
+                  <input id="sol-tel" name="telefone" type="tel" required autocomplete="tel" />
+                </div>
+                <div class="form-field">
+                  <label for="sol-email">E-mail</label>
+                  <input id="sol-email" name="email" type="email" autocomplete="email" />
+                </div>
+                <div class="form-field">
+                  <label for="sol-detalhes">Detalhes do pedido</label>
+                  <textarea
+                    id="sol-detalhes"
+                    name="detalhes"
+                    placeholder="Nomes dos registrados, datas aproximadas, livro/folha se souber, finalidade da certidão."
+                  ></textarea>
+                </div>
+              </div>
+              <p class="form-hint form-hint--submit" hidden></p>
+              <div class="form-actions">
+                <button type="submit" class="btn btn--primary">Enviar solicitação</button>
+                <button type="button" class="btn btn--outline-dark" onclick="abrirWhatsApp('Olá! Gostaria de solicitar uma certidão.')">
+                  WhatsApp
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="region-note mt-1-5">
+            <p>
+              Atendemos também moradores de Santana do Piauí, Sussuapara, Geminiano e Aroeira do Itaim — verifique
+              documentação complementar quando o registro for de outra comarca.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="logo" href="../index.html">
+            <img
+              class="logo__img"
+              src="../assets/images/logo-3oficio.png"
+              alt=""
+              width="52"
+              height="52"
+              decoding="async"
+            />
+            <span class="logo__text">
+              <span class="logo__title">Cartório 3º Ofício</span>
+              <span class="logo__subtitle">Picos-PI</span>
+            </span>
+          </a>
+          <p class="site-footer__meta">
+            Serviços notariais e de registro com foco na comunidade de Picos e região.
+          </p>
+          <div class="a11y-note">
+            <span>Acessibilidade:</span>
+            <span>VLibras disponível nesta página.</span>
+          </div>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Endereço</h2>
+          <ul class="site-footer__list">
+            <li>Rua Santo Antônio, 218 — Centro</li>
+            <li>Picos-PI, CEP 64600-000</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Contato</h2>
+          <ul class="site-footer__list">
+            <li><a href="tel:+558934222905">(89) 3422-2905</a></li>
+            <li>
+              <a href="mailto:cartoriooficio3@hotmail.com">cartoriooficio3@hotmail.com</a>
+            </li>
+            <li>Seg a sex, 7h às 17h</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Links</h2>
+          <ul class="site-footer__list">
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="solicitacao.html">Solicitar certidão</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li>
+              <a href="https://www.instagram.com/cartorio3oficiopicos/" target="_blank" rel="noopener noreferrer"
+                >Instagram @cartorio3oficiopicos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>© Cartório 3º Ofício de Picos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/whatsapp.js"></script>
+  </body>
+</html>

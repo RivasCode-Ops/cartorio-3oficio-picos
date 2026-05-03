@@ -1,0 +1,54 @@
+# Regras de Estilo - Cartório 3º Ofício
+
+## Cores
+- Sempre usar variáveis CSS (nunca HEX direto)
+- Azul primário (#0B3B60) para header, footer, botões principais
+- Laranja destaque (#E07A2C) APENAS para CTAs urgentes (WhatsApp, Solicitar Certidão)
+
+## Tipografia
+- Títulos H1-H6: font-family 'Poppins', font-weight 600
+- Parágrafos: font-family 'Inter', font-weight 400
+- Tamanho base: 16px (html), rem para tudo
+
+## Espaçamento
+- Container max-width: 1280px
+- Padding mobile: 1rem
+- Padding desktop: 2rem
+- Gap entre seções: 4rem
+
+## Componentes
+### Botão primário
+- Fundo: var(--cor-destaque)
+- Texto: branco
+- Border-radius: 12px
+- Hover: opacidade 0.9 + scale(1.02)
+
+### Card de serviço
+- Fundo: branco
+- Sombra: 0 4px 12px rgba(0,0,0,0.04)
+- Border-radius: 16px
+- Padding: 1.5rem
+- Hover: sombra maior + translateY(-2px)
+
+### Ícones
+- Tamanho: 32px (desktop), 24px (mobile)
+- Cor: var(--cor-destaque)
+- Stroke width: 2px (line icons)
+
+## Mobile-first
+- Base: mobile (320px)
+- Tablet: 768px
+- Desktop: 1024px
+- Large: 1280px
+
+## Acessibilidade
+- Contraste mínimo 4.5:1
+- Foco visível (outline 2px solid)
+- Alt em todas imagens
+- VLibras no footer
+
+## Proibido
+- Gradientes pesados
+- Bordas arredondadas > 24px
+- Sombras escuras
+- Imagens sem otimização

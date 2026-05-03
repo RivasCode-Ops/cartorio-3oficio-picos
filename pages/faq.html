@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perguntas Frequentes | Cartório 3º Ofício de Picos-PI</title>
+    <meta
+      name="description"
+      content="Dúvidas sobre documentos, prazos e atendimento no Cartório 3º Ofício de Picos-PI."
+    />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="icon" type="image/png" href="../assets/images/logo-3oficio.png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="../index.html">
+          <img
+            class="logo__img"
+            src="../assets/images/logo-3oficio.png"
+            alt="Logo Cartório 3º Ofício de Picos"
+            width="52"
+            height="52"
+          />
+          <span class="logo__text">
+            <span class="logo__title">Cartório 3º Ofício</span>
+            <span class="logo__subtitle">Picos-PI</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Abrir menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-menu" id="menu-principal" aria-label="Principal">
+          <a href="../index.html">Início</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="solicitacao.html">Solicitar certidão</a>
+          <a href="faq.html" aria-current="page">FAQ</a>
+          <a href="contato.html">Contato</a>
+          <button type="button" class="btn btn--whatsapp-inline btn--small" onclick="abrirWhatsApp()">
+            WhatsApp
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-hero__title">Perguntas frequentes</h1>
+          <p class="page-hero__lead">
+            Respostas objetivas para orientar sua ida ao cartório. Em caso de dúvida específica, ligue ou use o
+            WhatsApp.
+          </p>
+          <button type="button" class="btn btn--primary mt-1" onclick="abrirWhatsApp()">
+            Falar no WhatsApp
+          </button>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tit-faq">
+        <div class="container">
+          <h2 id="tit-faq" class="visually-hidden">Lista de perguntas</h2>
+          <div class="faq-list">
+            <details>
+              <summary>Quais documentos preciso levar?</summary>
+              <p>
+                Varia por serviço. Na maioria dos casos: documento de identificação com foto (RG, CNH ou equivalente)
+                e documentos relacionados ao ato (certidões, procurações, títulos). Traga originais e cópias quando
+                orientado.
+              </p>
+            </details>
+            <details>
+              <summary>Quanto tempo sai uma certidão?</summary>
+              <p>
+                Depende do tipo de certidão, conferências e fila. Peça estimativa no balcão ou pelo telefone no momento
+                do pedido.
+              </p>
+            </details>
+            <details>
+              <summary>Precisa agendar?</summary>
+              <p>
+                Alguns serviços permitem atendimento por ordem de chegada; outros exigem horário ou confirmação
+                prévia. Consulte antes para evitar retrabalho.
+              </p>
+            </details>
+            <details>
+              <summary>O cartório atende finais de semana?</summary>
+              <p>
+                O horário padrão informado no site é segunda a sexta, 7h às 17h. Alterações extraordinárias serão
+                comunicadas pelos canais oficiais do cartório.
+              </p>
+            </details>
+            <details>
+              <summary>Como pago emolumentos e taxas?</summary>
+              <p>
+                Formas de pagamento seguem regras locais e tabelas vigentes. Informe-se no atendimento sobre
+                cartão, PIX ou outros meios aceitos.
+              </p>
+            </details>
+            <details>
+              <summary>Posso solicitar certidão para parente?</summary>
+              <p>
+                Depende da legislação aplicável e da certidão. Em muitos casos há requisitos sobre parentesco,
+                procuração ou justificativa. O cartório orienta caso a caso.
+              </p>
+            </details>
+          </div>
+
+          <p class="mt-1-5">
+            Não encontrou o que precisa? <a href="contato.html">Vá à página de contato</a> ou use o botão flutuante do
+            WhatsApp.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="logo" href="../index.html">
+            <img
+              class="logo__img"
+              src="../assets/images/logo-3oficio.png"
+              alt=""
+              width="52"
+              height="52"
+              decoding="async"
+            />
+            <span class="logo__text">
+              <span class="logo__title">Cartório 3º Ofício</span>
+              <span class="logo__subtitle">Picos-PI</span>
+            </span>
+          </a>
+          <p class="site-footer__meta">
+            Serviços notariais e de registro com foco na comunidade de Picos e região.
+          </p>
+          <div class="a11y-note">
+            <span>Acessibilidade:</span>
+            <span>VLibras disponível nesta página.</span>
+          </div>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Endereço</h2>
+          <ul class="site-footer__list">
+            <li>Rua Santo Antônio, 218 — Centro</li>
+            <li>Picos-PI, CEP 64600-000</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Contato</h2>
+          <ul class="site-footer__list">
+            <li><a href="tel:+558934222905">(89) 3422-2905</a></li>
+            <li>
+              <a href="mailto:cartoriooficio3@hotmail.com">cartoriooficio3@hotmail.com</a>
+            </li>
+            <li>Seg a sex, 7h às 17h</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Links</h2>
+          <ul class="site-footer__list">
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="solicitacao.html">Solicitar certidão</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li>
+              <a href="https://www.instagram.com/cartorio3oficiopicos/" target="_blank" rel="noopener noreferrer"
+                >Instagram @cartorio3oficiopicos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>© Cartório 3º Ofício de Picos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/whatsapp.js"></script>
+  </body>
+</html>

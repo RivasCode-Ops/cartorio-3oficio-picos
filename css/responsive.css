@@ -1,0 +1,95 @@
+@media (max-width: 1023px) {
+  body {
+    padding-bottom: 5rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    padding-inline: var(--padding-desktop);
+  }
+
+  .section {
+    padding-block: 4.5rem;
+  }
+
+  .hero {
+    padding-block: 4rem 5rem;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .service-grid--wide {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    position: static;
+    inset: auto;
+    top: auto;
+    transform: none !important;
+    background: transparent;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem 1.5rem;
+    overflow: visible;
+    width: auto;
+    flex: 1;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .nav-menu.is-open {
+    transform: none;
+  }
+
+  .nav-menu a {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .site-header__inner {
+    flex-wrap: nowrap;
+  }
+
+  .service-card__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .feature__icon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Large */
+@media (min-width: 1280px) {
+  .hero__grid {
+    gap: 4rem;
+  }
+}

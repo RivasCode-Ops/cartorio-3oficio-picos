@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nossos Serviços | Cartório 3º Ofício de Picos-PI</title>
+    <meta
+      name="description"
+      content="Tabelionato de Notas, Registro Civil, Protesto de Títulos e Registro de Documentos no Cartório 3º Ofício de Picos. Atendimento regional."
+    />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="icon" type="image/png" href="../assets/images/logo-3oficio.png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="../index.html">
+          <img
+            class="logo__img"
+            src="../assets/images/logo-3oficio.png"
+            alt="Logo Cartório 3º Ofício de Picos"
+            width="52"
+            height="52"
+          />
+          <span class="logo__text">
+            <span class="logo__title">Cartório 3º Ofício</span>
+            <span class="logo__subtitle">Picos-PI</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Abrir menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-menu" id="menu-principal" aria-label="Principal">
+          <a href="../index.html">Início</a>
+          <a href="servicos.html" aria-current="page">Serviços</a>
+          <a href="solicitacao.html">Solicitar certidão</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contato.html">Contato</a>
+          <button type="button" class="btn btn--whatsapp-inline btn--small" onclick="abrirWhatsApp()">
+            WhatsApp
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-hero__title">Nossos Serviços</h1>
+          <p class="page-hero__lead">
+            Serviços notariais e de registro com agilidade e transparência para você e sua empresa.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="notas" aria-labelledby="tit-notas">
+        <div class="container">
+          <div class="service-group">
+            <h2 id="tit-notas" class="service-group__title">Tabelionato de Notas</h2>
+            <div class="service-grid service-grid--wide">
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Procuração Pública</h3>
+                  <span class="badge badge--urgent">Urgente</span>
+                </div>
+                <p class="service-item__desc">Representação com firma reconhecida e orientação sobre poderes.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Quero informações sobre Procuração Pública.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Autenticação de Documentos</h3>
+                  <span class="badge badge--urgent">Urgente</span>
+                </div>
+                <p class="service-item__desc">Conferência de cópias e autenticação conforme normas do cartório.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Preciso autenticar documentos.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Reconhecimento de Firma</h3>
+                </div>
+                <p class="service-item__desc">Comparecimento e validação de assinatura com segurança.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Quero reconhecimento de firma.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Testamentos (público e cerrado)</h3>
+                </div>
+                <p class="service-item__desc">Orientação sobre modalidades e formalidades legais aplicáveis.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Gostaria de informações sobre testamentos.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-list" aria-label="Lista expansível de notas">
+            <details>
+              <summary>Itens e formalidades comuns no Tabelionato de Notas</summary>
+              <ul>
+                <li>Documento de identificação oficial com foto</li>
+                <li>Comprovação de endereço quando exigido pelo ato</li>
+                <li>Agenda sujeita à demanda — confirme pelo telefone ou WhatsApp</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="civil" aria-labelledby="tit-civil">
+        <div class="container">
+          <div class="service-group">
+            <h2 id="tit-civil" class="service-group__title">Registro Civil</h2>
+            <div class="service-grid service-grid--wide">
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Nascimento (1ª e 2ª via)</h3>
+                  <span class="badge badge--urgent">Urgente</span>
+                </div>
+                <p class="service-item__desc">Emissão e orientação sobre documentação para retificações quando cabível.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Preciso de certidão de nascimento.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Casamento</h3>
+                </div>
+                <p class="service-item__desc">Registro e certidões relacionadas a matrimônio.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Preciso de informações sobre casamento/registro civil.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Óbito</h3>
+                </div>
+                <p class="service-item__desc">Certidões e averbações conforme os casos.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Preciso de informações sobre registro de óbito/certidão.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Averbações</h3>
+                </div>
+                <p class="service-item__desc">Atualizações em assentos e registros quando permitido em lei.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Preciso de averbação em certidão.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="protesto" aria-labelledby="tit-protesto">
+        <div class="container">
+          <div class="service-group">
+            <h2 id="tit-protesto" class="service-group__title">Protesto de Títulos</h2>
+            <div class="service-grid service-grid--wide">
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Protesto de dívidas</h3>
+                </div>
+                <p class="service-item__desc">Abertura de cartório de protesto para títulos e documentos de dívida.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Preciso de informações sobre protesto de dívidas.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Cancelamento de protesto</h3>
+                </div>
+                <p class="service-item__desc">Orientação sobre quitação e baixa conforme regras aplicáveis.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Preciso cancelar protesto.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Certidão de protesto</h3>
+                  <span class="badge badge--urgent">Urgente</span>
+                </div>
+                <p class="service-item__desc">Emissão de certidões para comprovação de situação do título.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Preciso de certidão de protesto.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="titulos-docs" aria-labelledby="tit-rtd">
+        <div class="container">
+          <div class="service-group">
+            <h2 id="tit-rtd" class="service-group__title">Registro de Títulos e Documentos</h2>
+            <div class="service-grid service-grid--wide">
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Contratos</h3>
+                </div>
+                <p class="service-item__desc">Registro para publicidade e segurança jurídica negocial.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Quero registrar um contrato.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+              <article class="service-item">
+                <div class="service-item__head">
+                  <h3 class="service-item__title">Documentos particulares</h3>
+                </div>
+                <p class="service-item__desc">Análise prévia e encaminhamento para registro quando admitido.</p>
+                <button type="button" class="btn btn--primary btn--small btn--full" onclick="abrirWhatsApp('Olá! Preciso registrar documento particular.')">
+                  Solicitar via WhatsApp
+                </button>
+              </article>
+            </div>
+          </div>
+
+          <div class="region-note">
+            <p>
+              <strong>Atendimento regional:</strong> Picos, Santana do Piauí, Sussuapara, Geminiano e Aroeira do
+              Itaim — entre em contato para orientações sobre deslocamento e documentação.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tit-docs">
+        <div class="container">
+          <h2 id="tit-docs" class="section__title">Documentos necessários (referência)</h2>
+          <p class="section__lead">
+            Lista genérica: cada serviço pode exigir itens adicionais. Confirme sempre com o cartório.
+          </p>
+          <div class="table-wrap">
+            <table class="doc-table">
+              <thead>
+                <tr>
+                  <th>Serviço</th>
+                  <th>Documentos comuns</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Notas / firma</td>
+                  <td>RG ou CNH; originais e cópias conforme o ato</td>
+                </tr>
+                <tr>
+                  <td>Registro civil</td>
+                  <td>Documentos do caso e certidões prévias quando exigidas</td>
+                </tr>
+                <tr>
+                  <td>Protesto</td>
+                  <td>Título, instrumento e comprovantes conforme análise</td>
+                </tr>
+                <tr>
+                  <td>RTD</td>
+                  <td>Contrato ou documento com instrumento hábil ao registro</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="logo" href="../index.html">
+            <img
+              class="logo__img"
+              src="../assets/images/logo-3oficio.png"
+              alt=""
+              width="52"
+              height="52"
+              decoding="async"
+            />
+            <span class="logo__text">
+              <span class="logo__title">Cartório 3º Ofício</span>
+              <span class="logo__subtitle">Picos-PI</span>
+            </span>
+          </a>
+          <p class="site-footer__meta">
+            Serviços notariais e de registro com foco na comunidade de Picos e região.
+          </p>
+          <div class="a11y-note">
+            <span>Acessibilidade:</span>
+            <span>VLibras disponível nesta página.</span>
+          </div>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Endereço</h2>
+          <ul class="site-footer__list">
+            <li>Rua Santo Antônio, 218 — Centro</li>
+            <li>Picos-PI, CEP 64600-000</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Contato</h2>
+          <ul class="site-footer__list">
+            <li><a href="tel:+558934222905">(89) 3422-2905</a></li>
+            <li>
+              <a href="mailto:cartoriooficio3@hotmail.com">cartoriooficio3@hotmail.com</a>
+            </li>
+            <li>Seg a sex, 7h às 17h</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="site-footer__heading">Links</h2>
+          <ul class="site-footer__list">
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="solicitacao.html">Solicitar certidão</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li>
+              <a href="https://www.instagram.com/cartorio3oficiopicos/" target="_blank" rel="noopener noreferrer"
+                >Instagram @cartorio3oficiopicos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>© Cartório 3º Ofício de Picos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/whatsapp.js"></script>
+  </body>
+</html>
