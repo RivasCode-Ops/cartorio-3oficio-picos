@@ -1024,9 +1024,10 @@ table.doc-table {
 /* Rota no Google Maps (geolocalização → destino) */
 .maps-route-float {
   position: fixed;
-  right: var(--padding-mobile);
-  bottom: calc(var(--padding-mobile) + 3.75rem);
-  z-index: 199;
+  left: var(--padding-mobile);
+  right: auto;
+  bottom: var(--padding-mobile);
+  z-index: 200;
   display: flex;
   align-items: center;
   gap: 0.5rem;
