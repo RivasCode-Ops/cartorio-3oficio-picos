@@ -1021,6 +1021,55 @@ table.doc-table {
   flex-shrink: 0;
 }
 
+/* Rota no Google Maps (geolocalização → destino) */
+.maps-route-float {
+  position: fixed;
+  right: var(--padding-mobile);
+  bottom: calc(var(--padding-mobile) + 3.75rem);
+  z-index: 199;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.95rem;
+  background: var(--cor-primaria);
+  color: var(--cor-destaque);
+  border: 1px solid rgba(197, 160, 89, 0.45);
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: var(--sombra-media);
+  font-weight: 600;
+  font-size: 0.875rem;
+  font-family: var(--fonte-corpo);
+  transition: var(--transicao);
+}
+
+.maps-route-float:hover {
+  filter: brightness(1.08);
+  transform: scale(1.02);
+}
+
+.maps-route-float svg {
+  flex-shrink: 0;
+}
+
+.map-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 480px) {
+  .map-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .map-actions .btn {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
 .mt-1 {
   margin-top: 1rem;
 }
