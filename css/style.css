@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@300;400;600;700&display=swap');
 
 *,
 *::before,
@@ -265,13 +265,13 @@ a:hover {
   border-color: rgba(255, 255, 255, 0.85);
 }
 
-.hero .btn--outline {
+.hero:not(.hero--spotlight) .btn--outline {
   color: var(--cor-primaria);
   border-color: var(--cor-primaria);
   background: var(--cor-branco);
 }
 
-.hero .btn--outline:hover {
+.hero:not(.hero--spotlight) .btn--outline:hover {
   background: var(--cor-secundaria);
 }
 
@@ -305,31 +305,69 @@ a:hover {
   font-size: 0.875rem;
 }
 
-/* Hero */
+/* Hero — layout em camadas (arco + faixa CTA), cores do README */
 .hero {
+  position: relative;
+  overflow: hidden;
   background: var(--cor-secundaria);
-  padding-block: 3rem 4rem;
+  padding-block: 0 3rem;
+}
+
+.hero__backdrop {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: min(165%, 120rem);
+  height: clamp(17rem, 52vw, 26rem);
+  background: var(--cor-primaria);
+  border-radius: 0 0 50% 50%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero__grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   gap: 2rem;
   align-items: center;
+  padding-top: clamp(2.25rem, 6vw, 3.5rem);
+}
+
+.hero__kicker {
+  font-family: var(--fonte-titulo);
+  font-weight: 300;
+  font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 0.5rem;
 }
 
 .hero__tagline {
   font-family: var(--fonte-titulo);
   font-weight: 700;
   font-size: clamp(1.75rem, 5vw, 2.5rem);
-  color: var(--cor-primaria);
+  color: var(--cor-branco);
   line-height: 1.2;
   margin: 0 0 1rem;
 }
 
+.hero__tagline .hero__accent {
+  color: var(--cor-destaque);
+  font-weight: 700;
+}
+
+.hero__tagline .hero__muted {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+}
+
 .hero__text {
   margin: 0 0 1.5rem;
-  color: var(--cor-cinza);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.0625rem;
+  max-width: 36rem;
 }
 
 .hero__actions {
@@ -338,11 +376,30 @@ a:hover {
   gap: 0.75rem;
 }
 
+.hero--spotlight .btn--outline-dark {
+  color: var(--cor-branco);
+  border-color: rgba(255, 255, 255, 0.85);
+  background: transparent;
+}
+
+.hero--spotlight .btn--outline-dark:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--cor-branco);
+}
+
+.hero__visual {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
 .hero__media {
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   overflow: hidden;
   box-shadow: var(--sombra-media);
   background: var(--cor-cinza-fundo);
+  position: relative;
+  z-index: 1;
 }
 
 .hero__media img {
@@ -354,8 +411,21 @@ a:hover {
 .hero__caption {
   font-size: 0.8125rem;
   color: var(--cor-cinza);
-  padding: 0.5rem 0 0;
+  padding: 0.5rem 0.75rem 0;
   margin: 0;
+  background: var(--cor-branco);
+}
+
+.hero__strip {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  background: var(--cor-primaria);
+  color: var(--cor-branco);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.45;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  box-shadow: var(--sombra-media);
 }
 
 /* Cards grid */

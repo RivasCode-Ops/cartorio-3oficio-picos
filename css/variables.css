@@ -1,4 +1,8 @@
 :root {
+  /*
+   * Paleta institucional (README do repositório).
+   * Peças de redes podem usar verde/dourado; o site mantém azul + laranja.
+   */
   /* Cores primárias */
   --cor-primaria: #0B3B60;
   --cor-primaria-escura: #072A45;

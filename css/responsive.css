@@ -4,6 +4,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .hero--spotlight .hero__backdrop {
+    height: clamp(26rem, 118vw, 36rem);
+  }
+}
+
 /* Tablet */
 @media (min-width: 768px) {
   .container {
@@ -15,7 +21,7 @@
   }
 
   .hero {
-    padding-block: 4rem 5rem;
+    padding-block: 0 4rem;
   }
 
   .hero__grid {
