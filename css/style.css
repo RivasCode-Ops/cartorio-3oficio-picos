@@ -250,12 +250,12 @@ a:hover {
 
 .btn--primary {
   background: var(--cor-destaque);
-  color: var(--cor-branco);
+  color: var(--cor-primaria);
   border-color: var(--cor-destaque);
 }
 
 .btn--primary:hover {
-  opacity: 0.9;
+  filter: brightness(1.05);
   transform: scale(1.02);
 }
 
@@ -287,7 +287,7 @@ a:hover {
 
 .btn--whatsapp-inline {
   background: var(--cor-destaque);
-  color: var(--cor-branco);
+  color: var(--cor-primaria);
   border: none;
 }
 
@@ -305,7 +305,7 @@ a:hover {
   font-size: 0.875rem;
 }
 
-/* Hero — layout em camadas (arco + faixa CTA), cores do README */
+/* Hero — layout em camadas (arco + faixa CTA), verde + dourado */
 .hero {
   position: relative;
   overflow: hidden;
@@ -340,32 +340,42 @@ a:hover {
   font-weight: 300;
   font-size: clamp(0.9375rem, 2vw, 1.0625rem);
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(197, 160, 89, 0.92);
   margin: 0 0 0.5rem;
 }
 
 .hero__tagline {
   font-family: var(--fonte-titulo);
-  font-weight: 700;
-  font-size: clamp(1.75rem, 5vw, 2.5rem);
-  color: var(--cor-branco);
-  line-height: 1.2;
+  font-weight: 600;
+  font-size: clamp(1.35rem, 4.2vw, 2.1rem);
+  color: var(--cor-destaque);
+  line-height: 1.28;
   margin: 0 0 1rem;
+  max-width: 40rem;
+}
+
+.hero__tagline-line {
+  display: block;
 }
 
 .hero__tagline .hero__accent {
   color: var(--cor-destaque);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .hero__tagline .hero__muted {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.92);
+  font-weight: 500;
+  color: rgba(245, 234, 212, 0.95);
+}
+
+.hero__tagline .hero__strong {
+  font-weight: 800;
+  color: var(--cor-destaque-claro);
 }
 
 .hero__text {
   margin: 0 0 1.5rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(245, 234, 212, 0.92);
   font-size: 1.0625rem;
   max-width: 36rem;
 }
@@ -377,14 +387,14 @@ a:hover {
 }
 
 .hero--spotlight .btn--outline-dark {
-  color: var(--cor-branco);
-  border-color: rgba(255, 255, 255, 0.85);
+  color: var(--cor-destaque);
+  border-color: rgba(197, 160, 89, 0.85);
   background: transparent;
 }
 
 .hero--spotlight .btn--outline-dark:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: var(--cor-branco);
+  background: rgba(197, 160, 89, 0.12);
+  border-color: var(--cor-destaque-claro);
 }
 
 .hero__visual {
@@ -420,9 +430,9 @@ a:hover {
   margin: 0;
   padding: 1rem 1.25rem;
   background: var(--cor-primaria);
-  color: var(--cor-branco);
+  color: var(--cor-destaque);
   font-size: 0.9375rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.45;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   box-shadow: var(--sombra-media);
@@ -599,7 +609,7 @@ a:hover {
 }
 
 .badge--urgent {
-  background: rgba(224, 122, 44, 0.15);
+  background: rgba(197, 160, 89, 0.2);
   color: var(--cor-destaque-escuro);
 }
 
@@ -802,7 +812,7 @@ table.doc-table {
 .form-field textarea:focus {
   outline: none;
   border-color: var(--cor-primaria);
-  box-shadow: 0 0 0 2px rgba(11, 59, 96, 0.15);
+  box-shadow: 0 0 0 2px rgba(5, 48, 27, 0.18);
 }
 
 .form-field textarea {

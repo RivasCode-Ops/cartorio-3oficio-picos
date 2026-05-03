@@ -10,9 +10,9 @@ Site institucional com foco em conversão para o Cartório 3º Ofício de Picos-
 - Design mobile-first
 
 ## Cores do projeto
-- Primária: `#0B3B60` (Azul confiança)
-- Secundária: `#F5F9FF` (Azul gelo)
-- Destaque: `#E07A2C` (Laranja terroso)
+- Primária: `#05301B` (Verde institucional)
+- Secundária: `#EFEFEF` (Cinza claro de apoio)
+- Destaque: `#C5A059` (Dourado / areia)
 - Fundo: `#FFFFFF`
 - Texto: `#1E2A3A` e `#5A6B7A`
 

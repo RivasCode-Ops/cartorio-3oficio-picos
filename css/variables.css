@@ -1,21 +1,18 @@
 :root {
-  /*
-   * Paleta institucional (README do repositório).
-   * Peças de redes podem usar verde/dourado; o site mantém azul + laranja.
-   */
+  /* Identidade visual alinhada ao material do cartório (verde + dourado). */
   /* Cores primárias */
-  --cor-primaria: #0B3B60;
-  --cor-primaria-escura: #072A45;
-  --cor-primaria-clara: #145A8A;
+  --cor-primaria: #05301b;
+  --cor-primaria-escura: #021910;
+  --cor-primaria-clara: #0c5c3a;
 
   /* Cores secundárias */
-  --cor-secundaria: #F5F9FF;
-  --cor-secundaria-escura: #E2ECF9;
+  --cor-secundaria: #efefef;
+  --cor-secundaria-escura: #dedede;
 
-  /* Destaque */
-  --cor-destaque: #E07A2C;
-  --cor-destaque-claro: #F59A5A;
-  --cor-destaque-escuro: #C55A15;
+  /* Destaque (dourado / areia) */
+  --cor-destaque: #c5a059;
+  --cor-destaque-claro: #d4b47a;
+  --cor-destaque-escuro: #8a6a38;
 
   /* Neutras */
   --cor-branco: #FFFFFF;
