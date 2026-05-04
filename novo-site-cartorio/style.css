@@ -1,22 +1,39 @@
 /*
- * Paleta oficial (alinhada ao site institucional do cartório):
- * Primária #05301B · Destaque #C5A059 · Neutros #1E2A3A / #5A6B7A · Fundos #EFEFEF / #FFF
+ * Paleta idêntica ao site publicado em:
+ * https://rivascode-ops.github.io/cartorio-3oficio-picos/
+ * (espelho de css/variables.css na raiz do repositório)
  */
 :root,
 [data-theme='light'] {
-  --bg: #f5f3ee;
-  --bg-alt: #efefef;
-  --surface: #ffffff;
-  --text: #1e2a3a;
-  --text-muted: #5a6b7a;
-  --brand: #05301b;
-  --brand-deep: #021910;
-  --brand-2: #0c5c3a;
-  --accent: #c5a059;
-  --accent-hover: #d4b47a;
+  --cor-primaria: #05301b;
+  --cor-primaria-escura: #021910;
+  --cor-primaria-clara: #0c5c3a;
+  --cor-secundaria: #efefef;
+  --cor-secundaria-escura: #dedede;
+  --cor-destaque: #c5a059;
+  --cor-destaque-claro: #d4b47a;
+  --cor-destaque-escuro: #8a6a38;
+  --cor-branco: #ffffff;
+  --cor-preto: #1e2a3a;
+  --cor-cinza: #5a6b7a;
+  --cor-cinza-claro: #94a3b8;
+  --cor-cinza-fundo: #f8fafc;
+
+  /* aliases usados neste layout */
+  --bg: var(--cor-cinza-fundo);
+  --bg-alt: var(--cor-secundaria);
+  --surface: var(--cor-branco);
+  --text: var(--cor-preto);
+  --text-muted: var(--cor-cinza);
+  --brand: var(--cor-primaria);
+  --brand-deep: var(--cor-primaria-escura);
+  --brand-2: var(--cor-primaria-clara);
+  --accent: var(--cor-destaque);
+  --accent-hover: var(--cor-destaque-claro);
+  --accent-dark: var(--cor-destaque-escuro);
   --accent-soft: rgba(197, 160, 89, 0.22);
   --border: rgba(5, 48, 27, 0.12);
-  --shadow: 0 12px 40px rgba(5, 48, 27, 0.1);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   --radius: 14px;
   --radius-lg: 22px;
   --font: 'DM Sans', system-ui, sans-serif;
@@ -27,16 +44,25 @@
 }
 
 [data-theme='dark'] {
+  /* Mantém primária/dourado oficiais; fundos escurecidos para contraste */
+  --cor-primaria: #05301b;
+  --cor-primaria-escura: #021910;
+  --cor-primaria-clara: #0c5c3a;
+  --cor-destaque: #c5a059;
+  --cor-destaque-claro: #d4b47a;
+  --cor-destaque-escuro: #8a6a38;
+
   --bg: #04120c;
   --bg-alt: #0a1f14;
   --surface: #0f2619;
   --text: #eef4f0;
   --text-muted: #9cb0a5;
-  --brand: #05301b;
-  --brand-deep: #021910;
-  --brand-2: #d4b47a;
-  --accent: #c5a059;
+  --brand: var(--cor-primaria);
+  --brand-deep: var(--cor-primaria-escura);
+  --brand-2: var(--cor-destaque-claro);
+  --accent: var(--cor-destaque);
   --accent-hover: #e0cc8a;
+  --accent-dark: var(--cor-destaque-escuro);
   --accent-soft: rgba(197, 160, 89, 0.14);
   --border: rgba(255, 255, 255, 0.1);
   --shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
