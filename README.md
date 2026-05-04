@@ -34,3 +34,8 @@ Site institucional com foco em conversão para o Cartório 3º Ofício de Picos-
 
 ## Comandos Cursor
 Use `Ctrl/Cmd + I` e cole os comandos da pasta `.cursor/commands/`
+
+Sugestão antes de qualquer alteração: abra ou cole o conteúdo de `.cursor/commands/antes-de-codar.md` (checklist + lembretes Git/Pages).
+
+## Rotina no terminal (opcional)
+Na raiz do projeto, no PowerShell: `.\scripts\preflight.ps1` (mostra branch, status e último commit).
